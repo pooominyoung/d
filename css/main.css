@@ -1,0 +1,167 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0 auto;
+    width: 80vw;
+    }
+
+.wrapper{
+    width: 100%;
+    border-style: outset; border-color: rgb(151, 121, 102);
+}
+
+header{
+    border-style: outset;
+    border-color: rgb(151, 121, 102);
+    height: 200px;
+    padding-bottom: 10px;
+    background-color: rgb(109, 83, 65);
+}
+
+.top--header{
+    height: 160px;
+    text-align: center;
+    position: relative
+}
+
+.top--header>h1{
+    height:fit-content ;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    left:0px; right: 0px; top: 0px; bottom: 0px;
+    margin: auto;
+    color: rgb(154, 127, 104);
+    text-shadow: -1px -2px 2px rgb(88, 72, 50);
+}
+
+header>nav{
+    height: 40px;
+}
+
+header>nav>.nav--d1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header>nav>.nav--d1>li{
+    border-radius: 50%;
+    width: 23%;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    background: radial-gradient(closest-side at 50% 40%,rgb(142, 117, 96)10%, rgb(102, 77, 59));
+    border-color: rgb(151, 121, 102);
+    line-height: 40px;
+    box-shadow: 0px 1px 5px 2px rgb(100, 76, 60);
+    border-right :1px solid rgb(102, 76, 61);
+    border-bottom: 1px solid rgb(97, 72, 55);
+}
+
+header>nav>.nav--d1>li>a{
+    font-size: 27px;
+    color: rgb(154, 127, 104);
+    text-shadow: 0px -1px 1px rgb(219, 191, 177);
+    /* color: rgb(56, 49, 39); */
+    margin: auto;
+    height: fit-content;
+    display: block;
+
+}
+
+header>nav>.nav--d1>li>.nav--d2{
+    display: none;
+    margin: 17px auto;
+    width: 100%;
+    text-align: center;
+    border-style:outset; border-color: rgb(151, 121, 102);
+    background-color: rgb(109, 83, 65);
+}
+
+header>nav>.nav--d1>li>.nav--d2>li{
+    margin: 5px;
+    border-radius: 50%;
+    background-color: rgb(109, 83, 65);
+    text-shadow: 1px 1px 0px rgb(237, 198, 178);
+    background: radial-gradient(closest-side at 50% 50%, rgb(102, 77, 59)30%,rgb(142, 117, 96)300%);
+    /* background: radial-gradient(closest-side at 50% 40%, rgb(87, 64, 48),rgb(142, 117, 96,0)); */
+    border-color: rgb(151, 121, 102);
+    border-top: 1px solid rgb(78, 61, 54);
+    border-left: 1px solid rgb(53, 43, 35);
+    box-shadow: 0px 1px 5px 2px rgb(123, 91, 71);
+
+}
+
+header>nav>.nav--d1>li>.nav--d2>li>a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.nav--d1>li:hover>.nav--d2{
+    display: block;
+}
+
+main{
+    position: relative;
+    border-style: inset;
+    border-color: rgb(151, 121, 102);
+    padding: 10px;
+    min-height: 52.5vh;
+    height: fit-content;
+    background-color: rgb(78, 53, 35);
+
+}
+main::before{
+    content: "";
+    position: absolute;
+    /* background: url(/img/천텍스쳐.jpg); */
+    background: url(/img/천텍스쳐.jpg);
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    opacity: 10%;
+}
+main>section{
+    height: max-content;
+}
+
+main>section>.main1{
+    position: absolute;
+    width: 50%;
+    height: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    padding: 3px;
+}
+
+main>section>.main1>img{
+    width: 100%;
+    height: auto;
+}
+.main1>label{
+    display: block;
+    margin: 5px;
+}
+
+
+main>section>article{
+    text-align: center;
+    height: fit-content;
+    margin: 10px;
+}
+
+footer{
+    border-style: outset; border-color: rgb(151, 121, 102);
+    background-color: rgb(109, 83, 65);
+    height: 200px;
+}
+footer>div{
+    border: 1px solid;
+}
