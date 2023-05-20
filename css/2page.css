@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+.wrapper{
+    width: 800px;
+    margin-top: 30px;
+    height: 550px;
+    background-size: contain;
+    margin: 0 auto;
+    background-image: url(/img/tomato/Green_grass_texture_above.jpg);
+}
+
+html{
+    margin: 30px auto;  
+    background-size: 100px;
+    background-image: url(/img/스티커/ggugug.png);
+}
+
+
+.p2topheader{
+    width: 100%;
+}
+
+.p2topheader>img{
+    width: 300px
+}
+
+main{
+    height: auto;
+    position: relative;
+    height : 100%;
+    display: flex;
+}
+
+.gu{
+    position: absolute;
+    width: 300px;
+    right:30px; bottom:-3px;
+}
+
+.gu>img{
+    width: 330px;
+    height: 400px;
+}
+
+.toma{
+    position: absolute;
+    width: 300px;
+    top: -4px;
+    left: 300px;
+    transform: rotate(180deg);
+}
+.toma>img{
+    width: 300px;
+
+}
+
+.octo{
+    position: absolute;
+    width: 300px;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+.octo>img{
+    width: 300px;
+
+}
+
+.turtle{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    right: 100px;
+}
+.turtle>img{
+    width: 100px;
+
+}
+
+.baby1{
+    display: none;
+    position: absolute;
+    width: 100px;
+    top: 90px;
+    transition: 2s;
+    right: 240px;
+    background-image: url(/img/스티커/KakaoTalk_20230515_190001306_25.gif);
+
+}
+.baby1>img{
+    width: 100px;
+}
+
+
+.baby2{ position: fixed;
+    width: 300px;
+    left: 0;
+    top: 100px;
+}
+.baby2>img{
+    width: 300px;
+
+}
+
+.kog{
+    width: 900px;
+    height: 400px;
+    transition: 2s;
+}
+
+.toma:hover ~ .baby1{
+    display: block;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.letter{
+    position: relative; 
+    width: 700px;
+    transition: all ease 2s 0s;
+    transition-timing-function: 2s;
+}
+
+#a{
+    position: absolute;
+    width: 200px;
+    left: -300px;
+    bottom: 30px;
+}
+#b{
+    position: relative;
+    width: 500px;
+    left: -180px;;
+    top: -50px;
+    z-index: 3;
+    display: none;
+}
+
+#a:hover ~ #b{
+    display: block;
+    transform: scaleX(1.1);
+    
+}
+#a:hover {
+    display: none;
+}

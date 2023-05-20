@@ -1,27 +1,72 @@
+/* font-family: 'Barriecito', cursive;
+font-family: 'Bonbon', cursive;
+font-family: 'Flavors', cursive;
+font-family: 'Grechen Fuemen', cursive;
+font-family: 'Lacquer', cursive;
+font-family: 'Neonderthaw', cursive;                                                                  
+font-family: 'Happy Groovy', sans-serif;
+font-family: 'g Getuk', sans-serif;
+font-family: 'Suithame', sans-serif;
+                                                
+font-family: 'KIDS JOURNEY', sans-serif; <-귀여움
+
+
+*/
+
+
+
+
 *{
     list-style: none;
     text-decoration: none;
     padding: 0;
-    margin: 0;
 }
+
+html{
+    position: relative;
+    background-color:rgb(253, 203, 203);
+}
+html::before{
+    position: absolute;
+    content: '';
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    background-image: url("/img/letter/KakaoTalk_20230517_193015094_03.png");
+    background-size: 100px;
+}
+
+
+
+header::before{
+    content: '';
+    background-size: 140%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    background-position: -150px,-100px;
+    background-image: url(/img/cake/headercake.jpg);
+}
+
 
 body{
     margin: 0 auto;
-    width: 80vw;
-    }
+    width: 700px;
+    height: max-content;
+    position: relative;
+}
 
 .wrapper{
+    position: relative;
     width: 100%;
-    border-style: outset; border-color: rgb(151, 121, 102);
+    background-color: white;
 }
 
 header{
-    border-style: outset;
-    border-color: rgb(151, 121, 102);
-    height: 200px;
+    position: relative;
+    height: 300px;
     padding-bottom: 10px;
-    background-color: rgb(109, 83, 65);
 }
+
 
 .top--header{
     height: 160px;
@@ -29,139 +74,97 @@ header{
     position: relative
 }
 
-.top--header>h1{
-    height:fit-content ;
-    width: fit-content;
-    display: block;
+main::before{
+    content: '';
     position: absolute;
-    left:0px; right: 0px; top: 0px; bottom: 0px;
-    margin: auto;
-    color: rgb(154, 127, 104);
-    text-shadow: -1px -2px 2px rgb(88, 72, 50);
+    background-size: 100%;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-image: url(/img/cake/carrotcake.jpg);
+    opacity: 40%;
 }
-
-header>nav{
-    height: 40px;
-}
-
-header>nav>.nav--d1{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header>nav>.nav--d1>li{
-    border-radius: 50%;
-    width: 23%;
-    position: relative;
-    text-align: center;
-    height: 100%;
-    background: radial-gradient(closest-side at 50% 40%,rgb(142, 117, 96)10%, rgb(102, 77, 59));
-    border-color: rgb(151, 121, 102);
-    line-height: 40px;
-    box-shadow: 0px 1px 5px 2px rgb(100, 76, 60);
-    border-right :1px solid rgb(102, 76, 61);
-    border-bottom: 1px solid rgb(97, 72, 55);
-}
-
-header>nav>.nav--d1>li>a{
-    font-size: 27px;
-    color: rgb(154, 127, 104);
-    text-shadow: 0px -1px 1px rgb(219, 191, 177);
-    /* color: rgb(56, 49, 39); */
-    margin: auto;
-    height: fit-content;
-    display: block;
-
-}
-
-header>nav>.nav--d1>li>.nav--d2{
-    display: none;
-    margin: 17px auto;
-    width: 100%;
-    text-align: center;
-    border-style:outset; border-color: rgb(151, 121, 102);
-    background-color: rgb(109, 83, 65);
-}
-
-header>nav>.nav--d1>li>.nav--d2>li{
-    margin: 5px;
-    border-radius: 50%;
-    background-color: rgb(109, 83, 65);
-    text-shadow: 1px 1px 0px rgb(237, 198, 178);
-    background: radial-gradient(closest-side at 50% 50%, rgb(102, 77, 59)30%,rgb(142, 117, 96)300%);
-    /* background: radial-gradient(closest-side at 50% 40%, rgb(87, 64, 48),rgb(142, 117, 96,0)); */
-    border-color: rgb(151, 121, 102);
-    border-top: 1px solid rgb(78, 61, 54);
-    border-left: 1px solid rgb(53, 43, 35);
-    box-shadow: 0px 1px 5px 2px rgb(123, 91, 71);
-
-}
-
-header>nav>.nav--d1>li>.nav--d2>li>a{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 900;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-}
-
-.nav--d1>li:hover>.nav--d2{
-    display: block;
-}
-
 main{
     position: relative;
-    border-style: inset;
-    border-color: rgb(151, 121, 102);
-    padding: 10px;
+    background-size: contain;
+    background-position: 0px,-50px;
     min-height: 52.5vh;
-    height: fit-content;
-    background-color: rgb(78, 53, 35);
-
+    height: 700px;
+    display: flex;
 }
-main::before{
-    content: "";
+
+main>div>img{
+}
+
+.mainimg1>img{
+    width: 500px;
+    transform: rotate(-10deg);
     position: absolute;
-    /* background: url(/img/천텍스쳐.jpg); */
-    background: url(/img/천텍스쳐.jpg);
-    top: 0px; left: 0px; right: 0px; bottom: 0px;
-    opacity: 10%;
-}
-main>section{
-    height: max-content;
+    top: -50px;
+    left: 100px;
 }
 
-main>section>.main1{
+.mainimg2>img{
     position: absolute;
-    width: 50%;
-    height: fit-content;
-    margin: 10px auto;
-    text-align: center;
-    padding: 3px;
+    width: 500px;
+    left: 100px;
+    top: 300px;
+}
+.mainimg3>img{
+    position: absolute;
+    width: 700px;
+    left: 0px;
+    top: 40px;
 }
 
-main>section>.main1>img{
-    width: 100%;
-    height: auto;
-}
-.main1>label{
-    display: block;
-    margin: 5px;
+#ur{
+    width: 400px;
+    top: 90px;
+    left: -50px;
 }
 
-
-main>section>article{
-    text-align: center;
-    height: fit-content;
-    margin: 10px;
+.bear>img{
+    position: absolute;
+    right: -200px;
+    bottom: -100px;
+    width:600px;
+    opacity: 80%;
+}
+.day100>img{
+    position: absolute;
+    top: 100px;
+    left: -10px;
+}
+#v>img{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: 30px;
 }
 
 footer{
-    border-style: outset; border-color: rgb(151, 121, 102);
-    background-color: rgb(109, 83, 65);
-    height: 200px;
+    height: 300px;
+    background-size: cover;
+    background-image: url(/img/cake/headercake.jpg);
+    position: relative;
 }
-footer>div{
-    border: 1px solid;
+
+.icing{
+    position: relative;
+    z-index: 1;
+    top: -100px;
+    left: -40px;
+}
+.icing>img{
+    width:800px;
+    position: absolute;
+}
+
+.ballon1{
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    z-index: 3;
+}
+.ballon1>a>img{
+    left:100%;
+    width:300px;
 }
